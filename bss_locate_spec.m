@@ -1,4 +1,4 @@
-function [tau, spec] = bss_locate_spec(x, fs, d, nsrc, local, pooling, tau_grid)
+    function [tau, spec] = bss_locate_spec(x, fs, d, nsrc, local, pooling, tau_grid)
 
 % BSS_LOCATE_SPEC Estimation of the source TDOAs in a stereo convolutive
 % mixture using an angular spectrum
@@ -98,7 +98,7 @@ function spec = phat_spec(X, f, tau_grid)
 % PHAT_SPEC Computes the GCC-PHAT spectrum as defined in
 % C. Knapp, G. Carter, "The generalized cross-correlation method for
 % estimation of time delay", IEEE Transactions on Acoustics, Speech and
-% Signal Processing, 24(4):320â€“327, 1976.
+% Signal Processing, 24(4):320â€?27, 1976.
 %
 % spec = phat_spec(X, f, tau_grid)
 %
@@ -134,7 +134,7 @@ function spec = nonlin_spec(X, f, alpha, tau_grid)
 % NONLIN_SPEC Computes the nonlinear GCC-PHAT spectrum defined in
 % B. Loesch, B. Yang, "Blind source separation based on time-frequency
 % sparseness in the presence of spatial aliasing", in 9th Int. Conf. on
-% Latent Variable Analysis and Signal Separation (LVA/ICA), pp. 1â€“8, 2010.
+% Latent Variable Analysis and Signal Separation (LVA/ICA), pp. 1â€?, 2010.
 %
 % spec = nonlin_spec(X, f, alpha, tau_grid)
 %
@@ -170,7 +170,7 @@ function spec = music_spec(hatRxx, f, tau_grid)
 
 % MUSIC_SPEC Computes the MUSIC spectrum as defined in
 % R. Schmidt, "Multiple emitter location and signal parameter estimation",
-% IEEE Transactions on Antennas and Propagation, 34(3):276â€“280, 1986.
+% IEEE Transactions on Antennas and Propagation, 34(3):276â€?80, 1986.
 %
 % spec = music_spec(hatRxx, f, tau_grid)
 %
